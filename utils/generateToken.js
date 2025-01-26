@@ -21,9 +21,11 @@ const names = [
     "The Vortex"
 ];
 
-const generateCodename = () => {
+const generateToken = async () => {
     const randomName = names[Math.floor(Math.random() * names.length)];
     return `The ${randomName}`;
-}
+};
 
-module.exports = generateCodename;
+module.exports = {
+    generateToken
+};
